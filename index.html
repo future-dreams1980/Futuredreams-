@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Dreams</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+    }
+    header {
+      text-align: center;
+      padding: 50px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #2575fc;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #6a11cb;
+    }
+    section {
+      text-align: center;
+      padding: 50px;
+      margin: 50px 0;
+    }
+    .faculty {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .faculty-card {
+      background: rgba(255, 255, 255, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+    }
+    .faculty-card img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://ibb.co/MPW2fF0" alt="Future Dreams Logo" style="width: 100px; height: auto; margin-bottom: 20px;">
+    <h1>Welcome to Future Dreams</h1>
+    <p>Your Journey to the Future Starts Here</p>
+    <button onclick="showFaculties()">Our Faculties</button>
+  </header>
+  
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#faculties">Faculties</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We inspire and empower individuals to achieve their dreams.</p>
+  </section>
+  
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Coaching, Resources, and Stories to fuel your success.</p>
+  </section>
+  
+  <section id="faculties" style="display: none;">
+    <h2>Meet Our Faculties</h2>
+    <div class="faculty">
+      <div class="faculty-card">
+        <img src="https://pic.surf/dvej" alt="Faculty 1">
+        <p>Sunil Manna</p>
+      </div>
+      <div class="faculty-card">
+        <img src="https://pic.surf/540g" alt="Faculty 2">
+        <p>Somnath Samanta</p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@futuredreams.com</p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Future Dreams. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showFaculties() {
+      const facultySection = document.getElementById('faculties');
+      facultySection.style.display = 'block';
+      window.location.hash = 'faculties'; // Navigate to the faculties section
+    }
+  </script>
+</body>
+</html>
